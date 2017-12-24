@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  ACSwipableCardsView
 //
-//  Created by Krasa on 10.12.17.
-//  Copyright © 2017 Krasa. All rights reserved.
+//  Created by  Alexey Rossoshansky on 10.12.17.
+//  Copyright © 2017  Alexey Rossoshansky. All rights reserved.
 //
 
 import UIKit

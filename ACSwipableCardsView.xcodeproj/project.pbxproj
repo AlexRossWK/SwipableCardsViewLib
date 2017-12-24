@@ -10,8 +10,9 @@
 		218F8E401FDD883B00B80FB2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218F8E3F1FDD883B00B80FB2 /* AppDelegate.swift */; };
 		218F8E421FDD883B00B80FB2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218F8E411FDD883B00B80FB2 /* ViewController.swift */; };
 		218F8E451FDD883B00B80FB2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 218F8E431FDD883B00B80FB2 /* Main.storyboard */; };
-		218F8E471FDD883B00B80FB2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 218F8E461FDD883B00B80FB2 /* Assets.xcassets */; };
 		218F8E4A1FDD883B00B80FB2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 218F8E481FDD883B00B80FB2 /* LaunchScreen.storyboard */; };
+		218F8E531FDD88B900B80FB2 /* ACSwipablweCardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218F8E521FDD88B900B80FB2 /* ACSwipablweCardsView.swift */; };
+		218F8E551FDDAF0E00B80FB2 /* View.xib in Resources */ = {isa = PBXBuildFile; fileRef = 218F8E541FDDAF0E00B80FB2 /* View.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,9 +20,10 @@
 		218F8E3F1FDD883B00B80FB2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		218F8E411FDD883B00B80FB2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		218F8E441FDD883B00B80FB2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		218F8E461FDD883B00B80FB2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		218F8E491FDD883B00B80FB2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		218F8E4B1FDD883B00B80FB2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		218F8E521FDD88B900B80FB2 /* ACSwipablweCardsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ACSwipablweCardsView.swift; sourceTree = "<group>"; };
+		218F8E541FDDAF0E00B80FB2 /* View.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = View.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +56,23 @@
 		218F8E3E1FDD883B00B80FB2 /* ACSwipableCardsView */ = {
 			isa = PBXGroup;
 			children = (
+				218F8E511FDD884400B80FB2 /* MainPartOfLib */,
 				218F8E3F1FDD883B00B80FB2 /* AppDelegate.swift */,
 				218F8E411FDD883B00B80FB2 /* ViewController.swift */,
 				218F8E431FDD883B00B80FB2 /* Main.storyboard */,
-				218F8E461FDD883B00B80FB2 /* Assets.xcassets */,
 				218F8E481FDD883B00B80FB2 /* LaunchScreen.storyboard */,
 				218F8E4B1FDD883B00B80FB2 /* Info.plist */,
+				218F8E541FDDAF0E00B80FB2 /* View.xib */,
 			);
 			path = ACSwipableCardsView;
+			sourceTree = "<group>";
+		};
+		218F8E511FDD884400B80FB2 /* MainPartOfLib */ = {
+			isa = PBXGroup;
+			children = (
+				218F8E521FDD88B900B80FB2 /* ACSwipablweCardsView.swift */,
+			);
+			name = MainPartOfLib;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,8 +134,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				218F8E551FDDAF0E00B80FB2 /* View.xib in Resources */,
 				218F8E4A1FDD883B00B80FB2 /* LaunchScreen.storyboard in Resources */,
-				218F8E471FDD883B00B80FB2 /* Assets.xcassets in Resources */,
 				218F8E451FDD883B00B80FB2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,6 +149,7 @@
 			files = (
 				218F8E421FDD883B00B80FB2 /* ViewController.swift in Sources */,
 				218F8E401FDD883B00B80FB2 /* AppDelegate.swift in Sources */,
+				218F8E531FDD88B900B80FB2 /* ACSwipablweCardsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,7 +274,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ACSwipableCardsView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = academia.ACSwipableCardsView;
+				PRODUCT_BUNDLE_IDENTIFIER = alexRoss.AC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -274,7 +286,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ACSwipableCardsView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = academia.ACSwipableCardsView;
+				PRODUCT_BUNDLE_IDENTIFIER = alexRoss.AC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -299,6 +311,7 @@
 				218F8E501FDD883B00B80FB2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
